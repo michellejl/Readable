@@ -17,8 +17,7 @@ class Post extends Component {
                 </div>
                 {this.props.summary
                     ? <Button text={'Read More'}/>
-                    : <span />
-                }
+                    : <span /> }
                 <Button edit text={'Edit'}/>
                 <Button delete text={'Delete'}/>
             </div>

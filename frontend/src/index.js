@@ -15,7 +15,11 @@ const mainTheme = {
 // Global Styles
 injectGlobal`
     body {
-        
+        font-family: 'Quicksand', sans-serif;
+        p {
+        line-height: 1.3em;
+        text-align: justify;
+        }
     }    
 `;
 

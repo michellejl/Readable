@@ -27,6 +27,7 @@ class PostMeta extends Component {
                 <Title>This is the Post Title</Title>
                 <ByLine>by Username on 12/13/14</ByLine>
                 <CategoryList>react, redux, bananas</CategoryList>
+                <p>0 Comments</p>
             </Meta>
         );
     }

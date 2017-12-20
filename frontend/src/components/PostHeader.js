@@ -6,11 +6,9 @@ import PostMeta from './PostMeta'
 const Header = styled.header`
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   border-bottom: 2px solid lightgray;
-  margin-bottom: 15px;
-  div {
-  align-self: flex-end;
-  }
+  margin: 25px 0 15px;
 `;
 
 class PostHeader extends Component {
