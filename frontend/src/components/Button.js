@@ -26,6 +26,13 @@ const Btn = styled.a`
         border-color: ${props => props.theme.editc};
     `}
     
+    ${props => props.small && css`
+        padding: 0;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    `}
+    
 `;
 
 class Button extends Component {
