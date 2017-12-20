@@ -6,7 +6,7 @@ const Btn = styled.a`
     text-align: center;
     border-radius: 3px;
     padding: 0.5rem 1rem;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem 1rem 0.5rem 0;
     background: transparent;
     color: ${props => props.theme.mainc};
     border: 2px solid ${props => props.theme.mainc};
@@ -31,6 +31,7 @@ const Btn = styled.a`
         width: 25px;
         height: 25px;
         line-height: 25px;
+        margin: 0.5rem;
     `}
     
 `;
