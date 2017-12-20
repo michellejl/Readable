@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Voting from './Voting'
+import Post from './Post'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-          <Voting />
+          <Post />
       </div>
     );
   }
