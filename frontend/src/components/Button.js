@@ -39,7 +39,7 @@ const Btn = styled.a`
 class Button extends Component {
     render() {
         return (
-            <Btn {...this.props}>{this.props.text}</Btn>
+            <Btn {...this.props}>{this.props.children}</Btn>
         );
     }
 }

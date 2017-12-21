@@ -5,9 +5,9 @@ class Voting extends Component {
     render() {
         return (
             <div>
-                <Button small delete text={'-'} />
+                <Button small delete>-</Button>
                 0
-                <Button small add text={'+'} />
+                <Button small add>+</Button>
             </div>
         );
     }

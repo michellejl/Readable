@@ -16,10 +16,10 @@ class Post extends Component {
                     }
                 </div>
                 {this.props.summary
-                    ? <Button text={'Read More'}/>
-                    : <span /> }
-                <Button edit text={'Edit'}/>
-                <Button delete text={'Delete'}/>
+                    ? <Button>Read More</Button>
+                    : <span />}
+                <Button edit>Edit</Button>
+                <Button delete>Delete</Button>
             </div>
         );
     }
