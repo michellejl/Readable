@@ -1,36 +1,26 @@
 import React, { Component } from 'react';
-import Post from './Post'
 import styled from 'styled-components'
-import CategoryList from './CategoryList'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import RootPage from './views/rootPage'
 
 const Container = styled.div`
     width: 75%;
     max-width: 850px;
     margin: 0 auto;
     display: flex;
-    .postlist {
-        width: 75%;
-        padding-right: 15px;
-    }
-    .sidebar {
-        align-self: stretch;
-    }
 `;
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-          <Container>
-              <div className={'postlist'}>
-                  <Post full />
-                  <Post summary />
-              </div>
-              <CategoryList />
-          </Container>
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="App">
+                <Container>
+                    <Route exact path='/' component={RootPage} />
+                    <Route path='/category' component={RootPage} />
+                </Container>
+            </div>
+        );
+    }
 }
 
 export default App;

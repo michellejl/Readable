@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import Voting from './Voting'
+import Voting from '../Voting'
 import PostMeta from './PostMeta'
 
 const Header = styled.header`

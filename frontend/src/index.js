@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import './index.css';
+import { BrowserRouter } from 'react-router-dom'
 import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 import { injectGlobal, ThemeProvider } from 'styled-components';
@@ -26,7 +26,9 @@ injectGlobal`
 
 ReactDOM.render(
     <ThemeProvider theme={mainTheme}>
-        <App />
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
     </ThemeProvider>,
     document.getElementById('root')
 );
